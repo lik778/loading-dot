@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="loading.css">
+</head>
+<body>
+  <div class="loading" id="loading">
+    <!-- dot 重复 36 次 -->
+    <!-- <div class="dot"></div> -->
+  </div>
+
+  <script type="text/javascript">
+    var loadingDiv = document.getElementById('loading');
+    for (var i = 0; i < 50; i++) {
+      var dotDiv = document.createElement('div');
+      dotDiv.className = 'dot';
+      loadingDiv.appendChild(dotDiv);
+    }
+  </script>
+  
+</body>
+</html>
